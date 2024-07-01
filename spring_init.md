@@ -38,9 +38,16 @@
 
 #   [health checks and metrics] [] Spring Boot actuator monitors and manages app, includes endpoint for health checks('/actuator/health'), metrics ('/actuator/metrics')
 
-#   [AOP, Spring Web, Spring security ???] []
 
 #   [IoC --<>-- Inversion of Control] [] resposible for instantiating, [configuring??] and [assembling??] spring beans in app
+
+#   [configuring beans] [] define custom beans using [@Configuration] and [@Bean]
+
+#   [Component Scanning] [] scans for [@Component] [@Service], [@Repository] [@Controller] and registers them as beans in IoC container
+
+#   [Property binding] [] binds environment properties to bean properties to easily configure beans using application.properties
+
+
 
 #   [Implementations of IoC container] [] 
 #   [Bean Factory] [] provides configuration framework and basic functionality to manage beans
@@ -60,3 +67,16 @@
 #   [constructor injection???] [] favors constructor injection over [setter injection??] [] promoting immutable, thread-safe objects, avoids need for boilerplate setter methods
 
 #   [constructor injection] [] setting up required objects in constructor rather than in setter method
+
+#   [AOP ---<>--- Aspect Oriented Programming] []
+#   to add additional behavior to existing code without modifying original code. 
+#   [Advice types] [] [@Before, @After, @AfterReturning] [] to execute custom logic at different points in method execution.
+
+
+#   [spring web] [] for java based web apps, 
+
+#   [spring securiy] [] powerful, customizable authentication, access-control framework, features...
+#   [authentication] provides support for authenticating users including OAuth2.o
+#   [authorization] secure web requests, methods, domain objects
+#   [protection against attacks] [] protect common web app attacks like cross-site forgery
+#   []
