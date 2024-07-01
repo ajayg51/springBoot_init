@@ -22,7 +22,15 @@
 #   [dependency management] [] Spring needs manual dependency definition, Spring Boot uses 'starter' dependencies
 #   [embedded server] [] Spring apps need separate server, Spring boot has embedded server
 #   [Rapid development] [] faster app developement as compared to Spring
-#   [use-cases] [] Spring suited for large, enterprise apps, Spring Boot to build microservices and standalone apps
+#   [use-cases] [] Spring suited for large enterprise apps, Spring Boot to build microservices and standalone apps
+
+#   [why large enterprises use spring instead of spring boot?] []
+#   [customization] spring is highly customizable
+#   [performance] only necessary depedency definition in spring
+#   [familiarity] custom configuration lead to spring uses rather than annotation memorization need in spring boot
+#   [complex system already built on spring so further customization is easier] []
+#   [scalability] 
+
 
 
 

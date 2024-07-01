@@ -34,16 +34,19 @@
 
 #   [Application properties (application.properties/*.yaml)] [] to specify server port, database configurations and other settings.
 
-#   [Profiles] [] Spring Boot supports different profiles for different developemnts (development, testing, production), [@Profile] specifies beans that should only be loaded for specific profiles
+#   [Profiles] [] Spring Boot supports different profiles for different developments (development, testing, production), [@Profile] specifies beans that should only be loaded for specific profiles
 
 #   [health checks and metrics] [] Spring Boot actuator monitors and manages app, includes endpoint for health checks('/actuator/health'), metrics ('/actuator/metrics')
 
 
-#   [IoC --<>-- Inversion of Control] [] resposible for instantiating, [configuring??] and [assembling??] spring beans in app
+#   [IoC --<>-- Inversion of Control] [] resposible for instantiating, [configuring] and [assembling] spring beans in app
 
 #   [configuring beans] [] define custom beans using [@Configuration] and [@Bean]
 
 #   [Component Scanning] [] scans for [@Component] [@Service], [@Repository] [@Controller] and registers them as beans in IoC container
+
+
+#   [@Component] [1] marks a class as a bean, [2] spring registers component classes as bean in IoC container, [3] dependency injection, [4] bean name same as class name with 1st letter in lower case, 
 
 #   [Property binding] [] binds environment properties to bean properties to easily configure beans using application.properties
 
@@ -64,7 +67,7 @@
 #   [Dependency Injection] [] done in following way : 
 #   [auto-configuration] automatically configures IoC container based on dependencies in classpath, reduces amount of manual configuration
 #   [starter dependencies] [] pulls in necessary dependencies and their transitive dependencies, reduces configuration
-#   [constructor injection???] [] favors constructor injection over [setter injection??] [] promoting immutable, thread-safe objects, avoids need for boilerplate setter methods
+#   [constructor injection] [] favors constructor injection over [setter injection] [] promoting immutable, thread-safe objects, avoids need for boilerplate setter methods
 
 #   [constructor injection] [] setting up required objects in constructor rather than in setter method
 
@@ -75,8 +78,8 @@
 
 #   [spring web] [] for java based web apps, 
 
-#   [spring securiy] [] powerful, customizable authentication, access-control framework, features...
-#   [authentication] provides support for authenticating users including OAuth2.o
+#   [spring security] [] powerful, customizable authentication, access-control framework, [features...]
+#   [authentication] provides support for authenticating users including OAuth2.0
 #   [authorization] secure web requests, methods, domain objects
 #   [protection against attacks] [] protect common web app attacks like cross-site forgery
 #   []
